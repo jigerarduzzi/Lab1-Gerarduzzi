@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Nombre"
+        android:hint="@string/campoNombre"
         android:inputType="textPersonName" />
 
     <EditText
@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Contraseña"
+        android:hint="@string/campoPass"
         android:inputType="textPassword" />
 
     <EditText
@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Repetir Contraseña"
+        android:hint="@string/campoRepeatPass"
         android:inputType="textPassword" />
 
     <EditText
@@ -36,14 +36,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Email"
+        android:hint="@string/campoMail"
         android:inputType="textEmailAddress" />
 
     <TextView
         android:id="@+id/cardType"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tipo de Tarjeta" />
+        android:text="@string/campoTipoTarjeta" />
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -67,13 +67,13 @@
             android:id="@+id/radioButton8"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
-            android:text="Débito" />
+            android:text="@string/campoDebito" />
 
         <RadioButton
             android:id="@+id/radioButton7"
             android:layout_width="171dp"
             android:layout_height="wrap_content"
-            android:text="Credito" />
+            android:text="@string/campoCredito" />
     </LinearLayout>
 
     <LinearLayout
@@ -87,7 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Numero de tarjeta"
+            android:hint="@string/campoNroTarjeta"
             android:inputType="number" />
 
 
@@ -97,7 +97,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="CCV"
+            android:hint="@string/campoCCV"
             android:inputType="number" />
     </LinearLayout>
 
@@ -110,7 +110,7 @@
         android:id="@+id/textViewCBU"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="CBU"
+        android:hint="@string/campoCBU"
         android:inputType="number"
         />
 
@@ -119,7 +119,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Alias CBU"
+        android:hint="@string/campoAliasCBU"
         android:inputType="text"/>
 
     <LinearLayout
@@ -132,7 +132,7 @@
             android:layout_width="263dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="¿Desea realizar carga inicial?" />
+            android:text="@string/campoQCargaInicial" />
 
         <Switch
             android:id="@+id/switchCarga"

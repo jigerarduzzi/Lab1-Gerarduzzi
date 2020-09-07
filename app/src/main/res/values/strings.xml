@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="campoNombre">Nombre</string>
+    <string name="campoPass">Contraseña</string>
+    <string name="campoRepeatPass">Repetir Contraseña</string>
+    <string name= "campoMail">Email</string>
+    <string name= "campoTipoTarjeta">Tipo de Tarjeta</string>
+    <string name= "campoDebito">Debito</string>
+    <string name= "campoCredito">Crédito</string>
+    <string name= "campoNroTarjeta">Número de Tarjeta</string>
+    <string name= "campoCCV">CCV</string>
+    <string name= "campoCBU">CBU</string>
+    <string name= "campoAliasCBU">Alias CBU</string>
+    <string name= "campoQCargaInicial">¿Desea realizar carga inicial?</string>
+
 </resources>
