@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
@@ -38,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         switchCarga = findViewById(R.id.switchCarga);
         seekBarCarga = findViewById(R.id.seekBarCarga);
         terminos = findViewById(R.id.checkBox);
-        CCV.setEnabled(false);
 
 
         comboMes=(Spinner) findViewById(R.id.spinnerMeses);
@@ -49,6 +49,27 @@ public class MainActivity extends AppCompatActivity {
 
         comboMes.setAdapter(adapter);
         comboAnio.setAdapter(adapter2);
+
+        numTarjeta.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable numTarjeta) {
+                if(numTarjeta.length()==16){
+                    CCV.setEnabled(true);
+                }else{
+                    CCV.setEnabled(false);
+                }
+            }
+        });
     }
 
 
