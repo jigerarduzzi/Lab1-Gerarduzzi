@@ -12,5 +12,7 @@
     <string name= "campoCBU">CBU</string>
     <string name= "campoAliasCBU">Alias CBU</string>
     <string name= "campoQCargaInicial">¿Desea realizar carga inicial?</string>
+    <string name= "campoCondiciones">Acepto los términos y condiciones.</string>
+    <string name= "botonRegistro">REGISTRAR</string>
 
 </resources>
